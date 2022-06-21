@@ -1,6 +1,7 @@
 $(".scrollto a").on("click", function () {
+    alert('aboba');
     let href = $(this).attr("href");
-
+    
     $("html, body").animate({
         scrollTop: $(href).offset().top
     }, {
