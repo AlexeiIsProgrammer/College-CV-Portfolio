@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
+    <title>Portfolio Resume</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="Images/light.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
-<body>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    
+    <script type="text/javascript" src="slide.js"> </script>
+   
+  </head>
+<body id="fot">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Bootstrap Portfolio</a>
+              <a class="navbar-brand" href="#fot">Bootstrap Portfolio</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Автобиография</a>
+                    <a class="nav-link" href="#bio" >Обо мне</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Программирование</a>
+                    <a class="nav-link" href="#galery" >Галерея</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Проектики</a>
+                    <a class="nav-link" href="#skills">Навыки</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#carouselExampleCaptions">Проектики</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#links" >Связь</a>
                   </li>
                 </ul>
               </div>
@@ -34,45 +44,252 @@
           </nav>
     </header>
 
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              О себе
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>Это фулл инфа обо мне.</strong> Оно отображается по умолчанию, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+    <!---->
+
+    <section id="bio">
+      <div class="container py-2">
+        <div class="h1 text-center text-dark" id="pageHeaderTitle">Немного биографии</div>
+    
+        <article class="postcard light blue">
+          <a class="postcard__img_link" href="Images/im.jpg">
+            <img class="postcard__img" src="Images/im.jpg" alt="Image Title" />
+          </a>
+
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title blue"><a href="https://github.com/AlexeiIsProgrammer">Алексей, 19</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i>Вс, Май 18-ое 2003
+              </time>
             </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">Родился, когда мне было 0 лет. До сознательного возраста жил в <a href="https://yandex.by/images/search?from=tabbar&text=шабаны">Шабанах.</a> Позже <s>умер.</s> Ладно, жив. на самом деле Шабаны - столица Америки, так говорил один небезизвестный <a href="https://ru.wikipedia.org/wiki/Лукашенко_Александр_Григорьевич">человек</a>. Спасибо ему за детство, легенда!
+            
           </div>
+
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i>Без вредных привычек</li>
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i>Настольный теннис</li>
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i>IT</li>
+              <li class="tag__item"><i class="fas fa-clock mr-2"></i>Искусство</li>
+              <li class="tag__item play blue">
+                <a href="https://mindtnv.gitlab.io/deadinsidenickgenerator/ "><i class="fas fa-play mr-2"></i>Выбери настощий ник</a>
+              </li>
+              <li class="tag__item play black">
+                <a href="https://www.buttonbass.com/DubstepPiano.html"><i class="fas fa-play mr-2"></i>Сыграй дапстепа</a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        
+      </div>
+    </section>
+    
+    <!---->
+
+      <div class="d-flex flex-row mb-3 justify-content-evenly mt-5" id = 'galery'>
+        <div class="h1 text-center text-dark" id="pageHeaderTitle">моя галерея</div>
+      </div>
+
+      <div class="panel-container">
+        <div class="panel active" style="background-image: url('Images/я.jpg')">
+            <div>Это я</div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Школа
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>Это тело аккордеона второго элемента.</strong> По умолчанию он скрыт, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
-            </div>
-          </div>
+        <div class="panel" style="background-image: url('Images/earphones.jpg')">
+            <div>Это мои наушники</div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Колледж
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию оно скрыто, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
-            </div>
-          </div>
+        <div class="panel" style="background-image: url('Images/гуль.jpg')">
+            <div>Это гуль</div>
+        </div>
+        <div class="panel" style="background-image: url('Images/assembler.jpg')">
+            <div>Это код на ассемблере</div>
         </div>
       </div>
+
+      <script>
+        const panels = document.querySelectorAll('.panel');
+panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+        removeActiveClasses();
+        panel.classList.add('active');
+    });
+});
+function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove('active');
+    });
+}
+      </script>
+
+
+    <div class="d-flex flex-row mb-3 justify-content-evenly mt-5" id = 'skills'>
+      <div class="h1 text-center text-dark" id="pageHeaderTitle">мои навыки</div>
+      </div>
+    <div class="d-flex flex-row mb-3 justify-content-evenly" id = 'skills'>
+     
+      <div class="card" style="width: 18rem;">
+        <img src="Images/languages.jpg" height="200px" class="card-img-top" alt="ЯП">
+        <div class="card-body">
+          <h5 class="card-title text-center">Языки Программирования</h5>
+          <hr class="hr-line">
+          <p class="card-text text-center">C#</p>
+          <p class="card-text text-center">C++</p>
+          <p class="card-text text-center">Python</p>
+          <p class="card-text text-center">Assembler</p>
+          <p class="card-text text-center">PHP</p>
+          <p class="card-text text-center">Javasript</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="Images/tongue.jpeg" height="200px" class="card-img-top" alt="Иностранные языки">
+        <div class="card-body">
+          <h5 class="card-title text-center">Иностранные языки</h5>
+          <hr class="hr-line">
+          <p class="card-text text-center">Русский (носитель)</p>
+          <p class="card-text text-center">Английский (А2)</p>
+          <p class="card-text text-center">Белорусский</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="Images/wpf.png" height="200px" class="card-img-top" alt="Методологии разработки">
+        <div class="card-body">
+          <h5 class="card-title text-center">Методологии разработки</h5>
+          <hr class="hr-line">
+          <p class="card-text text-center">Windows Forms Framework</p>
+          <p class="card-text text-center">WPF Framework</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="d-flex flex-row mb-3 justify-content-evenly">
+
+      <div class="card" style="width: 18rem;">
+        <img src="Images/vs.jpg" height="200px" class="card-img-top" alt="Среда разработки">
+        <div class="card-body">
+          <h5 class="card-title text-center">Среды разработки</h5>
+          <hr class="hr-line">
+          <p class="card-text text-center">Visual Studio</p>
+          <p class="card-text text-center">VS Code</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="Images/базаданных.jpg" height="200px" class="card-img-top" alt="БД">
+        <div class="card-body">
+          <h5 class="card-title text-center">Базы данных</h5>
+          <hr class="hr-line">
+          <p class="card-text text-center">MySQL</p>
+          <p class="card-text text-center">MS Access</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="Images/html-css.jpg" height="200px" class="card-img-top" alt="Разметка">
+        <div class="card-body">
+          <h5 class="card-title text-center">Прочие языки</h5>
+          <hr class="hr-line">
+          <p class="card-text text-center">HTML</p>
+          <p class="card-text text-center">CSS</p>
+        </div>
+      </div>
+
+    </div>
+    <!--Carusel-->
     
+    <div id="carouselExampleCaptions" class="carousel slide w-50 mx-auto my-5 mt-5" data-bs-ride="true">
+
+      <div class="d-flex flex-row mb-3 justify-content-evenly" id = 'skills'>
+        <div class="h1 text-center text-dark" id="pageHeaderTitle">мои проекты</div>
+      </div>
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner ">
+        <div class="carousel-item active" >
+          <a href="https://github.com/AlexeiIsProgrammer/Snake-2.0"><img src="Images/snake.png" height="500px" width="300" class="d-block w-100" alt="SnakeC++"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Змейка</h5>
+            <p>Проект, сделанный на C++ Builder'e</p>
+            <p>Первый "большой проект"</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="https://github.com/AlexeiIsProgrammer/Tanks3DUnity"><img src="Images/tanks.png" height="500px" class="d-block w-100" alt="Tanks3D"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Tanks 3D</h5>
+            <p>Разработан на Unity3D C#</p>
+            <p>Второй "большой проект"</p>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <a href="https://github.com/AlexeiIsProgrammer/Bakery"><img src="Images/TRPO.png" height="500px" class="d-block w-100" alt="DB_Students"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Учёт студентов колледжа</h5>
+            <p>По сути АРМ на MS Access</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <a href="https://github.com/AlexeiIsProgrammer/Finance-DB"><img src="Images/wpfApp.png" height="500px" class="d-block w-100" alt="DB_Finance"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Учёт финансов</h5>
+            <p>Проект создавался в Visual Studio на фреймворке WPF. ЯП - C#</p>
+            <p class="card-text">Самый масштабный проект из существующих на данный момент</p>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    <!--Carusel-->
+    
+    <!--Footer-->
+      <footer class="bg-dark text-center text-white" id="links">
+        <!-- Grid container -->
+
+        <div class="container p-4">
+          <!-- Section: Social media -->
+          <section >
+            <!-- Gmail -->
+              
+            <a class="btn btn-outline-light btn-floating m-1" href="https://mail.google.com/mail/u/2/?tab=om#inbox" role="button"
+              ><i class="fab fa-google"><img src="Images/gmail.png" width="25px" height="25px"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/lesha_bear/" role="button"
+              ><i class="fab fa-instagram"><img src="Images/instagram.png" width="25px" height="25px"></i
+            ></a>
+
+            <!-- VK -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://vk.com/nobrsm" role="button"
+              ><i class="fab fa-vk"><img src="Images/vk.png" width="25px" height="25px"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/AlexeiIsProgrammer" role="button"
+              ><i class="fab fa-github"><img src="Images/github.png" width="25px" height="25px"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+    
+      </footer>
+    <!--Footer-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+      
+  </body>
 </html>
