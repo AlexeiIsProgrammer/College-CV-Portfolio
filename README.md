@@ -1,7 +1,7 @@
 # College-CV-Portfolio
 
 ## Preview
-### https://htmlpreview.github.io/?https://github.com/AlexeiIsProgrammer/College-CV-Portfolio/blob/gh-cv/index.html
+### (Site)[https://htmlpreview.github.io/?https://github.com/AlexeiIsProgrammer/College-CV-Portfolio/blob/gh-cv/index.html]
 
 #### Разработка осуществляется с помощью Bootstrap в css и html, использование javascript помогает взаимодействовать пользователю с сайтом.
 
